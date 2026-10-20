@@ -1,0 +1,9 @@
+node_modules/
+*.log
+.DS_Store
+.env
+.env.*
+*.tgz
+
+# 运行时状态（插件激活时写入 ~/.dsh/cache，不应进仓库）
+bridge-status.json

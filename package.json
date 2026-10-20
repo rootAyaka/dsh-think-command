@@ -1,0 +1,45 @@
+{
+  "name": "dsh-think-command-v3",
+  "version": "1.4.0",
+  "description": "Human-facing /think command: inspect and switch the current session's reasoning (thinking) level; works in the Web command adapter and on the QQ bot channel",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    ".": "./lib/boot.v2.js"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --import ./test/register-resolve-hook.mjs test/qq-bridge.test.mjs"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "reasoning-effort",
+    "thinking",
+    "qqbot"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rootAyaka/dsh-think-command.git"
+  },
+  "homepage": "https://github.com/rootAyaka/dsh-think-command#readme",
+  "bugs": {
+    "url": "https://github.com/rootAyaka/dsh-think-command/issues"
+  },
+  "meta": {
+    "title": "思考等级指令 /think",
+    "description": "在聊天里用 /think 查看或切换当前会话的思考等级，支持 Web 与 QQ 通道。"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}

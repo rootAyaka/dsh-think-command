@@ -1,0 +1,4 @@
+- insert:
+    - id: command-think
+      name: dsh-think-command-v3
+      config: {}
